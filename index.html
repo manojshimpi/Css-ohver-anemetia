@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box{
+          width: 280px;
+          height: 210px;
+          background-image: url('./img/1.jpg');
+          background-size: cover;
+          box-shadow: 0px 0px 5px 5px rgb(0,0,0,0.2);
+          position: relative;
+          margin: 250px auto;
+          overflow: hidden;
+        }
+        .overlay{
+            width: 280px;
+            height: 212px;
+            background: rgb(0,0,0,0.5);
+            position: absolute;
+            top: -212px;
+            left: 0px;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+        .box:hover .overlay{
+            top: 0px;
+        }
+      
+        .overlay > a{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            text-align: center;
+            border-radius: 50px;
+            line-height: 50px;
+            position: absolute;
+            top:81px;
+            left: 80px;
+            color: #464646;
+        }
+       .banchor{
+        left: 140px !important;
+       }
+    </style>
+</head>
+<body>
+    <div class="common box">
+        <div class="overlay">
+            <a href="#"><i class="fa-sharp-duotone fa-solid fa-link"></i></a>
+            <a class="banchor" href="#"><i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+</body>
+</html>
